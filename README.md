@@ -6,7 +6,7 @@ Hola hijos de la remil:
 
 ```
 npm run dev = ver cambios en tiempo real
-npm run build -> npm start
+npm run build -> npm start = Desplegar y ejecutar la app en producción, no en tiempo real
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
