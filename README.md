@@ -11,6 +11,22 @@ npm run build -> npm start = Desplegar y ejecutar la app en producción, no en t
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+Base de datos Postgres Instrucciones:
+-Crear una base de datos en sus dispositivos locales en postgres.
+-Configurar su .env para DATABASE_URL="TU:URL"
+-Es todo, la aplicación maneja los comandos desde el front-end de la página web.
+
+
+
+
+
+
+
+
+
+
+Notas:
+
 You can start editing the page by modifying `app/page.tsx`.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
