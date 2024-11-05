@@ -5,7 +5,6 @@ import Dashboard from "./home/page";
 export default function Home() {
   return (
 <main>
-  <Navbar />
   <Dashboard></Dashboard>
 </main>
   );
