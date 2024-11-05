@@ -12,8 +12,11 @@ npm run build -> npm start = Desplegar y ejecutar la app en producción, no en t
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 Base de datos Postgres Instrucciones:
+
 -Crear una base de datos en sus dispositivos locales en postgres.
+
 -Configurar su .env para DATABASE_URL="TU:URL"
+
 -Es todo, la aplicación maneja los comandos desde el front-end de la página web.
 
 
