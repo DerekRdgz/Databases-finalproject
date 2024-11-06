@@ -49,11 +49,11 @@ const Navbar = () => {
             </Link>
 
             <Link 
-              href="/reportes" 
+              href="/sucursales" 
               className="flex items-center space-x-1 text-white hover:text-blue-200 transition duration-150"
             >
               <BarChart2 size={20} />
-              <span>Reportes</span>
+              <span>Sucursales</span>
             </Link>
           </div>
 
