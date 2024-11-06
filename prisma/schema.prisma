@@ -36,3 +36,14 @@ model Cuenta {
 
   @@map("cuentas")
 }
+
+model Sucursal {
+  id          Int        @id @default(autoincrement())
+  nombre      String
+  direccion   String
+  telefono    String
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  
+  @@map("sucursales")
+}
