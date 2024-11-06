@@ -10,7 +10,7 @@ export default function ClientsPage() {
 
   const loadClientes = async () => {
     try {
-      const response = await fetch('/api');
+      const response = await fetch('/api/clientes');
       if (!response.ok) {
         throw new Error('Error al cargar los clientes');
       }
@@ -38,7 +38,7 @@ export default function ClientsPage() {
   const handleDelete = async (id: number) => {
     if (window.confirm('¿Estás seguro de que quieres eliminar este cliente?')) {
       try {
-        const response = await fetch('/api', {
+        const response = await fetch('/clientes', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
