@@ -11,11 +11,39 @@ datasource db {
 }
 
 model Cliente {
-  id        Int      @id @default(autoincrement())
-  nombre    String
-  apellido  String
-  email     String   @unique
-  telefono  String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id            Int       @id @default(autoincrement())
+  nombre        String
+  apellido      String
+  email         String    @unique
+  telefono      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  cuentas       Cuenta[]
+
+  @@map("clientes")
+}
+
+model Cuenta {
+  id              Int      @id @default(autoincrement())
+  id_cliente      Int
+  tipo_cuenta     String   
+  saldo           Float    @default(0)
+  fecha_apertura  DateTime @default(now())
+  estado          String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  cliente         Cliente  @relation(fields: [id_cliente], references: [id])
+
+  @@map("cuentas")
+}
+
+model Sucursal {
+  id          Int        @id @default(autoincrement())
+  nombre      String
+  direccion   String
+  telefono    String
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  
+  @@map("sucursales")
 }

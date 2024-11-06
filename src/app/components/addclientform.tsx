@@ -29,7 +29,7 @@ export default function AddClienteForm({ onClienteAdded, clienteToEdit, onClient
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const url = '/api';
+      const url = '/api/clientes';
       const method = clienteToEdit ? 'PUT' : 'POST';
       const body = clienteToEdit ? JSON.stringify({ ...formData, id: clienteToEdit.id }) : JSON.stringify(formData);
 
