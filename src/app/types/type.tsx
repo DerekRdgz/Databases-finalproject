@@ -25,3 +25,12 @@ export type Cuenta = {
     apellido: string;
   };
 };
+
+export interface Sucursal {
+  id: number;
+  nombre: string;
+  direccion: string;
+  telefono: string;
+  createdAt: string;
+  updatedAt: string;
+}
